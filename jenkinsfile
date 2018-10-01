@@ -1,4 +1,4 @@
-mavenJob('example') {
+mavenJob('example-git') {
    
   
   description("jenkins job for A.com")
