@@ -1,4 +1,4 @@
-mavenJob('example-git') {
+mavenJob('example') {
    
   
   description("jenkins job for A.com")
@@ -21,6 +21,17 @@ mavenJob('example-git') {
     }
      }
       }
+  
+  
+  configure { project ->
+     project / 'reporters' << 'hudson.maven.reporters.MavenMailer' {
+       
+       recipients('vasu@gmail.com')
+       perModuleEmail('true')
+         }
+      }
+  
+  
 
  
   publishers {
@@ -37,7 +48,7 @@ mavenJob('example-git') {
             remote {
                 
                 url('git@server:account/repo1.git')
-               
+               credentials('110e6b6e-7345-436d-8c1c-27c06bcb17b5')
             }
            
         }
@@ -104,12 +115,14 @@ mavenJob('example-git') {
  
   }
   
+   label('w4')
+  
   
   wrappers {
-    environmentVariables {
+   environmentVariables {
       
     
-      propertiesFile("driver")
+     propertiesFile("driver")
     }
   }
   
@@ -117,13 +130,13 @@ mavenJob('example-git') {
   rootPOM('../sub-project/pom.xml')
   goals('-X clean compile exec:exec')
   
-  publishers {
-     //   extendedEmail {
-           //recipientList('smuvva@gmail.com')
-          mailer('smuvva@gmail.com',true,true)
+ // publishers {
+      //extendedEmail {
+         //  recipientList('smuvva@gmail.com')
+       //  mailer('smuvva@gmail.com',true,true)
           
        // }
-  }
+//  }
   
   
   publishers {
