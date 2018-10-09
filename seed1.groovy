@@ -1,5 +1,5 @@
 pipeline {
-   
+   agent any 
    stages("job creation") { 
 mavenJob('example-Git1') {
    
