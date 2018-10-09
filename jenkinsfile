@@ -3,7 +3,6 @@ node() {
 
 stage("build") {
 mavenJob('example-git') {
- 
   
   description("jenkins job for A.com")
  
