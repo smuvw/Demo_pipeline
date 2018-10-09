@@ -1,6 +1,7 @@
 pipeline {
    agent any 
-   stages("job creation") { 
+   stages { 
+      stage("Build job"){
 mavenJob('example-Git1') {
    
   
@@ -162,7 +163,7 @@ mavenJob('example-Git1') {
     }
    
 }
-
+      }
    }
 
 }
