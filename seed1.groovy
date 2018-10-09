@@ -1,10 +1,8 @@
-pipeline {
-   agent any 
-   stages { 
-      stage("Build job"){
-         
-         steps {
-mavenJob('example-Git1') {
+node(){
+   
+   stage("Buildjob") {
+      
+      mavenJob('example-Git') {
    
   
   description("jenkins job for A.com")
@@ -163,9 +161,14 @@ mavenJob('example-Git1') {
             markBuildAsFailureOnFailedConfiguration()
         }
     }
-   
+
+
+
 }
-      }
+© 2018 GitHub, Inc.
+      
+      
    }
-   }
+   
+   
 }
