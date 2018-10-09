@@ -1,4 +1,7 @@
-mavenJob('example-Git') {
+pipeline {
+   
+   stages("job creation") { 
+mavenJob('example-Git1') {
    
   
   description("jenkins job for A.com")
@@ -157,7 +160,9 @@ mavenJob('example-Git') {
             markBuildAsFailureOnFailedConfiguration()
         }
     }
+   
+}
 
-
+   }
 
 }
