@@ -2,6 +2,8 @@
 node() {
 
 stage("build") {
+
+echo"welcome to TPA"
 mavenJob('example-git') {
   
   description("jenkins job for A.com")
