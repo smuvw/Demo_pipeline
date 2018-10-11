@@ -1,4 +1,4 @@
-import groovy .*.*
+import groovy.*.*
   
 def name="srini"
 echo name
