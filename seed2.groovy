@@ -1,5 +1,6 @@
 import jenkins.model.*
 
+ @groovy.transform.Canonical
 class emp{
  def name="sam" 
 }
