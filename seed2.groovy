@@ -1,4 +1,8 @@
 def add() {
- println "welcome"
+ println "welcome Add"
+}
+return this;
+def sub() {
+ println "welcome sub"
 }
 return this;
