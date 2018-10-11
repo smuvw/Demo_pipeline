@@ -1,10 +1,10 @@
 stage 'Load files from GitHub'
 def environment, helloworld
-fileLoader.withGit('https://github.com/jenkinsci/workflow-remote-loader-plugin.git', 'master', null, '') {
-    helloworld = fileLoader.load('examples/fileLoader/helloworld');
-    environment = fileLoader.load('examples/fileLoader/environment');
+fileLoader.withGit('https://github.com/smuvw/Demo_pipeline.git', 'master', null, '') {
+    helloworld = fileLoader.load('seed2');
+   
 }
 
 stage 'Run methods from the loaded content'
-helloworld.printHello()
-environment.dumpEnvVars()
+helloworld.add()
+
