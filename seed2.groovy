@@ -1,4 +1,5 @@
 import jenkins.model.*
+import hudson.model.*
 
  @groovy.transform.Canonical
 class emp{
