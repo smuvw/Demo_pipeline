@@ -1,21 +1,4 @@
-import jenkins.model.*
-import hudson.model.*
-
-
-@groovy.transform.Canonical
-class emp {
- def name="sam" 
+def add(){
+ def a=10
+ echo a
 }
-
-def name="srini"
-echo name
-for(int i=1;i <5;i++) {
-
-echo "welcome"
-  
-}
-
-
-def emp e= new emp()
-
-echo e.name
