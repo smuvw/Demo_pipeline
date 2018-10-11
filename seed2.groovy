@@ -2,7 +2,7 @@ import jenkins.model.*
 import hudson.model.*
 
 
-class emp{
+class emp {
  def name="sam" 
 }
 
