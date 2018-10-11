@@ -3,7 +3,7 @@ def utilityLib(){
     def util = null
     util = fileLoader.load('Demo_pipeline/seed2.groovy');
 	
-  fileLoader.withGit('https://github.com/jenkinsci/workflow-remote-loader-plugin.git', 'master', null, '') {
+  fileLoader.withGit('hhttps://github.com/smuvw/Demo_pipeline.git', 'master', null, '') {
     util = fileLoader.load('Demo_pipeline/seed2.groovy');
   }
 
