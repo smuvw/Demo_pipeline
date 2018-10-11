@@ -1,17 +1,10 @@
-def utilityLib(){    
-	//loading from the groovy file repository 
-    def util = null
-    util = fileLoader.load('Demo_pipeline/seed2.groovy');
-	
-  fileLoader.withGit('https://github.com/smuvw/Demo_pipeline.git', 'master', null, '') {
-    util = fileLoader.load('Demo_pipeline/seed2.groovy');
-  }
-
-   return util
+stage 'Load files from GitHub'
+def environment, helloworld
+fileLoader.withGit('https://github.com/jenkinsci/workflow-remote-loader-plugin.git', 'master', null, '') {
+    helloworld = fileLoader.load('examples/fileLoader/helloworld');
+    environment = fileLoader.load('examples/fileLoader/environment');
 }
 
-node("master"){
-    def  utilb = utilityLib()
-    utilb.add
-    
-    }
+stage 'Run methods from the loaded content'
+helloworld.printHello()
+environment.dumpEnvVars()
