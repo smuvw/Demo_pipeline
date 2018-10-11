@@ -2,6 +2,7 @@ import jenkins.model.*
 import hudson.model.*
 
 
+@groovy.transform.Canonical
 class emp {
  def name="sam" 
 }
@@ -15,6 +16,6 @@ echo "welcome"
 }
 
 
-emp e= new emp();
+emp e= new emp()
 
 echo e.name
