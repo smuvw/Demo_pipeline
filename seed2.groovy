@@ -1,4 +1,5 @@
-  
+import jenkins.model.*
+
 class emp{
  def name="sam" 
 }
