@@ -1,5 +1,4 @@
-def add(){
- def a=10
- echo a
+def add() {
+ println "welcome"
 }
 return this;
