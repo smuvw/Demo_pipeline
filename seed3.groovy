@@ -7,4 +7,5 @@ fileLoader.withGit('https://github.com/smuvw/Demo_pipeline.git', 'master', null,
 
 stage 'Run methods from the loaded content'
 helloworld.add()
+helloworld.sub()
 
