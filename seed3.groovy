@@ -7,7 +7,7 @@ def utilityLib(){
 }
 
 node("master"){
-    def  utilb = utilityLib(
+    def  utilb = utilityLib()
     utilb.add
     
     }
