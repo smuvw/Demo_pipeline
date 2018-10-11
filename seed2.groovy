@@ -15,6 +15,6 @@ echo "welcome"
 }
 
 
-emp e= new emp()
+emp e= new emp();
 
 echo e.name
