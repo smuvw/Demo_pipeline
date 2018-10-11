@@ -16,6 +16,6 @@ echo "welcome"
 }
 
 
-emp e= new emp()
+def emp e= new emp()
 
 echo e.name
