@@ -1,6 +1,6 @@
   
 class emp{
- string name="sam" 
+ def name="sam" 
 }
 
 def name="srini"
