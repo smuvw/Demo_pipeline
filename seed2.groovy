@@ -15,18 +15,5 @@ def sub() {
 
 
 def readExcel(){
- def excelFile = new File('Workbook1.xlsx')
-excelFile.withInputStream { is ->
-  workbook = new XSSFWorkbook(is)       
-  (0..<workbook.numberOfSheets).each { sheetNumber ->
-    XSSFSheet sheet = workbook.getSheetAt( sheetNumber )
-    sheet.rowIterator().each { row ->
-      row.cellIterator().each { cell ->
-        println cell.toString()
-      }
-    }
-  }
-}
-
 }
 return this;
