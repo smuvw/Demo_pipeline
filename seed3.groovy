@@ -7,8 +7,8 @@ fileLoader.withGit('https://github.com/smuvw/Demo_pipeline.git', 'master', null,
 }
 
 stage 'Run methods from the loaded content'
-helloworld.add()
-helloworld.sub()
+//helloworld.add()
+//helloworld.sub()
 helloworld.Xlsx_Builder(smuvw/Demo_pipeline/output.xlsx)
 helloworld.getRowCount(sheet1)
 
