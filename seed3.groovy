@@ -9,3 +9,6 @@ stage 'Run methods from the loaded content'
 helloworld.add()
 helloworld.sub()
 
+stage 'create a file '
+createfile()
+
