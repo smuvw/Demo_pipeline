@@ -1,4 +1,4 @@
-import jenkins.model.Jenkins
+import jenkins.model.*
 import hudson.model.User
 import hudson.security.Permission
 import hudson.EnvVars
