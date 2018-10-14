@@ -8,7 +8,6 @@ f.split('\n').each {line ->
   println lin[1]
   
    
-}
 
 mavenJob(lin[0]) {
    
@@ -19,3 +18,4 @@ mavenJob(lin[0]) {
        
   }
   }
+}
