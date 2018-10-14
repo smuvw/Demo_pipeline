@@ -1,14 +1,18 @@
 
 
 
-parms=null
-  def parms=readFile("TestData1.csv").split('\n').each {line ->
-  
-  def lin =line.split(',')
 
-        echo lin[0]
-  echo lin[1]
-    
+stage 'Load files from GitHub'
+def environment, helloworld
+fileLoader.withGit('https://github.com/smuvw/Demo_pipeline.git', 'master', null, '') {
+   // helloworld = fileLoader.load('seed2');
+     helloworld = fileLoader.load('seed2');
+   
+}
+
+stage 'Run methods from the loaded content'
+helloworld.readFiletest()
+  
   mavenJob(lin[0]) {
    
   
