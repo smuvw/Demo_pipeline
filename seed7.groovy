@@ -8,7 +8,7 @@ f.split('\n').each {line ->
   println lin[1]
   println lin[2]
   
-  def jobname=lin[0],def jobdes=lin[1],def authtoken=lin[2]
+  def jobname=lin[0],jobdes=lin[1], authtoken=lin[2]
    
 
 mavenJob(jobname) {
