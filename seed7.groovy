@@ -6,7 +6,7 @@ f.split('\n').each {line ->
 
    println lin[0]
   println lin[1]
-  
+  println lin[2]
    
 
 mavenJob(lin[0]) {
@@ -17,5 +17,11 @@ mavenJob(lin[0]) {
   githubProjectUrl("http://github.com")
        
   }
-  }
+  
+  
+  configure { project ->
+        (project / 'authToken').setValue(lin[2])
+    }
+  
+}
 }
