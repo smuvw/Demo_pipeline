@@ -8,13 +8,13 @@ f.split('\n').each {line ->
   println lin[1]
   println lin[2]
   
-  def jobname=lin[0]
+  def jobname=lin[0],def jobdes=lin[1],def authtoken=lin[2]
    
 
-mavenJob(lin[0]) {
+mavenJob(jobname) {
    
   
-  description(jobname)
+  description(jobdes)
   properties {
   githubProjectUrl("http://github.com")
        
@@ -22,7 +22,7 @@ mavenJob(lin[0]) {
   
   
   configure { project ->
-        (project / 'authToken').setValue(lin[2])
+        (project / 'authToken').setValue(authtoken)
     }
   
 }
