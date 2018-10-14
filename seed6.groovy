@@ -1,5 +1,8 @@
+
+
+
 parms=null
-  parms=readFile("TestData1.csv").split('\n').each {line ->
+  def parms=readFile("TestData1.csv").split('\n').each {line ->
   
   def lin =line.split(',')
 
