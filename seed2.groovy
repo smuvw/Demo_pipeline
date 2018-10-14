@@ -1,5 +1,8 @@
 
 parms=null
+lin[0]=null
+lin[1]=null
+
 def readfileinfo(){
   parms=readFile("TestData1.csv").split('\n').each {line ->
   
