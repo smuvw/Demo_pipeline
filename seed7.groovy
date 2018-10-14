@@ -6,4 +6,16 @@ f.split('\n').each {line ->
 
    println lin[0]
   println lin[1]
+  
+   
 }
+
+mavenJob(lin[0]) {
+   
+  
+  description(lin[1])
+  properties {
+  githubProjectUrl("http://github.com")
+       
+  }
+  }
