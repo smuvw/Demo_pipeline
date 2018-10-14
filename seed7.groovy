@@ -1,5 +1,4 @@
 def f=readFileFromWorkspace("TestData1.csv")
-'println f
 
 f.split('\n').each {line ->
   
