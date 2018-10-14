@@ -15,7 +15,7 @@ stages{
  steps {
  script {
  
-  parms=readFile("TestData1.csv").split('\n).each {line ->
+  parms=readFile("TestData1.csv").split('\n').each {line ->
   
   def lin =line.split(',')
   echo lin[0]
