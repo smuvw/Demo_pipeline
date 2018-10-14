@@ -6,4 +6,4 @@ f.split('\n').each {line ->
 
    println lin[0]
   println lin[1]
-    
+}
