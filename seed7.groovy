@@ -14,7 +14,7 @@ f.split('\n').each {line ->
 mavenJob(lin[0]) {
    
   
-  description(lin[1])
+  description(jobname)
   properties {
   githubProjectUrl("http://github.com")
        
