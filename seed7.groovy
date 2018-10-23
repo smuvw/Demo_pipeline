@@ -5,7 +5,7 @@ f.split('\n').each {line ->
   def lin =line.split(',')
 
    println lin[0]
-  println lin[1]
+  #println lin[1]
   println lin[2]
   
   def jobname=lin[0],jobdes=lin[1], authtoken=lin[2]
@@ -14,7 +14,7 @@ f.split('\n').each {line ->
 mavenJob(jobname) {
    
   
-  description(jobdes)
+  description('welcome')
   properties {
   githubProjectUrl("http://github.com")
        
